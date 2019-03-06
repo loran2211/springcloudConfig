@@ -1,0 +1,17 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: loran-member
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:8000/eureka/
+  instance: 
+    instance-id: member-7001
+    prefer-ip-address: true    
+  info:  #info代表的是当使用者点击这个服务的链接是会展示下面这些信息.
+  app.name: test-Member
+  company.name: www.baidu.com
+  build.artifactId: microservicecloud-provider-dept-8001
+  build.version: '1.0'
